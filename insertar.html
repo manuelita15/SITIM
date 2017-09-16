@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Compra de tiquetes</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<header>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-simit">
+					<span class="sr-only">Desplegar / Ocultar Menú</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="index.php" class="navbar-brand">SITIM</a>
+			</div>
+			<!--Inicia Menu-->
+			<div class="collapse navbar-collapse" id="navegacion-simit">
+				<ul class="nav navbar-nav">
+					<li><a href="index.php">Inicio</a></li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+							Servicios <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu" role="menu">
+							<li class=""><a href="">Compra de tiquetes</a></li>
+							<li class="divider"></li>
+							<li><a href="consultaViajes.html">Consulta de tiquetes</a></li>
+							<li class="divider"></li>
+							<li><a href="reportes.html">Reportes</a></li>
+							<li class="divider"></li>
+							<li><a href="cancelar.php?ver=1">Cancelar tiquetes</a></li>
+						</ul>
+					</li>
+					<li><a href="#">normativa</a></li>
+					<li><a href="#">Vinculacion</a></li>
+					<li><a href="#">Quienes somos</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+				<form action="" class="navbar-form navbar-right" role="search">
+					<div class="form-group">
+						<input type="text" name="buscar" class="form-control" placeholder="buscar">
+					</div>
+					<button type="submit" class="btn btn-primary">
+						<span class="glyphicon glyphicon-search"></span>
+					</button>
+				</form>
+			</div>
+		</div>	
+		</nav>
+	</header>
+	<!---Termina menu-->
+	<section class="jumbotron">
+		<div class="container">
+			<h1 class="titulo-principal">Compra de tiquetes</h1>
+			<p>Compre sus tiquetes de manera sencilla</p>
+		</div>
+	</section>
+
+	<section class="main container">
+		<div class="row">
+			<section class="posts col-md-9">
+				<div class="miga-de-pan">
+					<ol class="breadcrumb">
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="#">Servicios</a></li>
+						<li class="active">compra de tiquetes</li>		
+					</ol>
+				</div>
+				<article class="post clearfix">					
+									
+				</article>
+
+
+				<div class="container">
+
+<!-- Inicia formulario -->
+
+					<form method="POST" name="identificador" id="identificador" action="documento.php">
+					
+						<h4>Ingrese acontinuacion su numero de identificacion para seguir el proceso de compra de tiquetes</h4>	
+
+						<div class="form-group">
+							<input class="form-control tamText" type="number" name="documento" id="documento" placeholder="Cedula" required>
+						</div>
+
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary" value="enviar" name="enviarDoc" id="enviarDoc" >
+						</div>
+
+					
+					</form>
+				</div>
+<!--En este div se muestra la respuesta que traiga el servidor-->				
+				
+
+<!-- Termina formulario -->
+
+				<nav>
+					<div class="center-block">
+						<ul class="pagination">
+							<li><a href="index.php">&laquo;<span class="sr-only">Anterior</span></a></li>
+							<li><a href="index.php">1</a></li>
+							<li class="active"><a href="#">2</a></li>
+							<li><a href="consultaViajes.html">3</a></li>
+							<li><a href="reportes.html">4</a></li>
+							<li><a href="cancelar.php?ver=1">5</a></li>
+							<li><a href="#">6</a></li>
+							<li><a href="consultaViajes.html">&raquo;<span class="sr-only">Siguiente</span></a></li>
+						</ul>					
+					</div>	
+				</nav>
+			</section>
+				<aside class="col-md-3 hidden-xs hidden-sm">
+					<h4>Servicios</h4>
+						<div class="list-group">
+							<a href="#" class="list-group-item active">Compra de tiquetes</a>
+							<a href="consultaViajes.html" class="list-group-item ">Consulta de tiquetes</a>
+							<a href="reportes.html" class="list-group-item ">Reportes</a>
+							<a href="cancelar.php?ver=1" class="list-group-item ">Cancelar tiquetes</a>
+						</div>
+					<h4>Noticias recientes</h4>
+					<a href="#" class="list-group-item">
+					<h4 class="list-group-item-heading">Se abren nuevas rutas</h4>
+						<p class="list-group-item-text">Conoce aqui las nuevas rutas que se implementaran apartir del proximo año 2018</p>
+					</a>
+					
+				</aside>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-6">
+					<p>Daniel Stiven Gomez - Administrador de Sistemas informaticos</p>
+				</div>
+				<div class="col-xs-6">
+					<ul class="list-inline text-right">
+						<li><a href="index.php">Inicio</a></li>
+						<li><a href="#">contacto</a></li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	 </footer>
+</body>
+</html>
